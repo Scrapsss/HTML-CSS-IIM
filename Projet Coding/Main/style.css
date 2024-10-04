@@ -38,7 +38,7 @@ h1:hover
 .TitreBanniere
 {
     animation: resetBanniere 0.3s forwards;
-    background-color: #7765E3;
+    background-color: #19780e;
     color: white;
     border-radius: 20px;
     width: 200px;
@@ -46,7 +46,7 @@ h1:hover
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: #352d5fa7 5px 7px 5px;
+    box-shadow: #03130173 5px 7px 5px;
     
 }
 
@@ -124,7 +124,7 @@ h1:hover
 
 header h3
 {
-    color: #7765E3;
+    color: #19780e;
     font-size: 33px;
 }
 
@@ -138,8 +138,7 @@ header
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: solid 3px;
-    border-color: #7765E3;
+    border-color: #19780e;
     
 }
 
@@ -169,13 +168,11 @@ header
         margin-top: 50px;
         height: 500px;
         width: 100%;
-        background-color: white;
+        /* background-color: white; */
         overflow-x: auto;
         padding: 0 15px;
   
     }
-
-
 
     .GlobalAnnonces
     {
@@ -193,10 +190,10 @@ header
         flex: 0 0 50%;
         padding: 20px;
         margin-right: 20px;
-        background: #7765E3;
+        background: #19780e;
         border-radius: 12px;
         height: 430px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.277);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.522);
         scroll-snap-align: start;
         transition: all 0.2s;
     }
@@ -214,7 +211,7 @@ header
     .annonce .AnnonceLinker
     {
         margin-top: auto;
-        background-color: #4e37cd;
+        background-color: #11500a;
         border-radius: 12px;
         font-size: 30px;
         width: 175px;
