@@ -9,23 +9,34 @@ a
     color: white;
 }
 
+footer
+{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body
 {
     font-family: 'Roboto',sans-serif;
     color: white;
+    min-height: 100vh;
     padding: 0;
     margin: 0;
-    /* background-color: rgb(29, 29, 29); */
-    background-image: url(Ressources/BalatroBackground.jpg);
+    background: linear-gradient(145deg, rgb(5, 41, 60) 35%, rgb(91, 32, 28) 65%);
     background-size: contain;
-    /* background-repeat: repeat-y; */
+}
+
+#Second
+{
+    background-image: url(Ressources/BalatroBackground.jpg);
 }
 
 h1 
 {
     animation: resetTitre 0.3s forwards;
     font-size: 60px;
-    background: linear-gradient( 90deg, #7765E3, #F17300);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -38,7 +49,9 @@ h1:hover
 .TitreBanniere
 {
     animation: resetBanniere 0.3s forwards;
-    background-color: #19780e;
+
+    /* background-color: rgb(18, 89, 128); */
+    background-image: repeating-linear-gradient(-75deg, rgb(7, 110, 9), rgb(7, 110, 9) 80px, rgb(17, 125, 19) 0, rgb(17, 125, 19) 120px);
     color: white;
     border-radius: 20px;
     width: 200px;
@@ -138,7 +151,6 @@ header
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-color: #19780e;
     
 }
 
@@ -152,7 +164,6 @@ header
         width: 100%;
         height: 50px;
         margin-top: 30px;
-        /* background: linear-gradient(rgb(29, 29, 29) 60%, white 70%); */
     
     }
 
@@ -190,7 +201,8 @@ header
         flex: 0 0 50%;
         padding: 20px;
         margin-right: 20px;
-        background: #19780e;
+        /* background: linear-gradient( 160deg, rgb(7, 110, 9) 35%, rgb(3, 52, 14)); */
+        background-image: repeating-linear-gradient(-75deg, rgb(7, 110, 9), rgb(7, 110, 9) 100px, rgb(17, 125, 19) 0, rgb(17, 125, 19) 180px);
         border-radius: 12px;
         height: 430px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.522);
@@ -211,7 +223,7 @@ header
     .annonce .AnnonceLinker
     {
         margin-top: auto;
-        background-color: #11500a;
+        background-color: #13480e;
         border-radius: 12px;
         font-size: 30px;
         width: 175px;
@@ -231,13 +243,12 @@ header
 
     /* ----- Fin de la partie Actualité ----- */
 
-/* ----- District des cartes ----- */
+/* ----- District d'explication du jeu ----- */
 
     #TitreCartes
     {   
         display: flex;
         justify-content: center;
-        /* background: linear-gradient(white 20%, rgb(29,29,29) 30%); */
         color: white;
         height: 150px;
         font-size: 40px;
@@ -246,23 +257,45 @@ header
     #Carte_district
     {
         margin-top: 30px;
-        /* background-color: lightblue; */
-        min-height: 100dvh;
+        margin-bottom: 30px;
+        height: 500px;
         display: flex;
         justify-content: space-around;
     }
 
     #Menu
     {
-        width: 30%;
-        /* background-color: lightcoral; */
+        width: 70%;
+        padding: 20px;
+        margin: 10px;
+        height: 500px;
+        border-radius: 20px;
+        background: linear-gradient( 160deg, rgb(7, 110, 9) 35%, rgb(3, 52, 14));
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
     }
 
-    #Affichage_Carte
+    #Mult
     {
-        width: 60%;
-        /* background-color: lime; */
+        width: 400px;
     }
+
+    #Joker
+    {
+        width: 300px;
+    }
+
+    #Règle
+    {
+        width: 40%;
+    }
+
+    #Regle2
+    {
+        width: 40%;
+    }
+
 
     /* ----- Fin de la partie District des cartes ----- */
 
