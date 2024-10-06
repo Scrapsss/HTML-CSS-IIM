@@ -22,6 +22,8 @@ body
     font-family: 'Roboto',sans-serif;
     color: white;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     background: linear-gradient(145deg, rgb(5, 41, 60) 35%, rgb(91, 32, 28) 65%);
@@ -30,7 +32,10 @@ body
 
 #Second
 {
-    background-image: url(Ressources/BalatroBackground.jpg);
+    /* background-image: url(Ressources/BalatroBackground.jpg);  */
+    background: linear-gradient(rgba(0, 0, 0, 0.426), rgba(0, 0, 0, 0.323)), url(Ressources/BalatroBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 
@@ -276,6 +281,47 @@ header
         font-size: 22px;
     }
 
+    .Build
+    {
+        width: 70%;
+        padding: 20px;
+        margin: 10px;
+        height: 600px;
+        border-radius: 20px;
+        background-image: repeating-linear-gradient(-75deg, rgb(143, 22, 22), rgb(143, 23, 23) 100px, rgb(137, 23, 23) 0, rgb(137, 23, 23) 180px);
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+    }
+
+    .annonce_build
+    {
+        display: flex;
+        justify-content: space-between;
+        flex: 0 0 50%;
+        padding: 20px;
+        margin-right: 20px;
+        /* background: linear-gradient( 160deg, rgb(7, 110, 9) 35%, rgb(3, 52, 14)); */
+        background-image: repeating-linear-gradient(-75deg, rgb(7, 110, 9), rgb(7, 110, 9) 100px, rgb(17, 125, 19) 0, rgb(17, 125, 19) 180px);
+        border-radius: 12px;
+        height: 530px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.522);
+        scroll-snap-align: start;
+        transition: all 0.2s;
+    }
+
+    #actualite_build
+    {
+        margin-top: 50px;
+        height: 600px;
+        width: 100%;
+        /* background-color: white; */
+        overflow-x: auto;
+        padding: 0 15px;
+  
+    }
+    
+
     #Mult
     {
         width: 400px;
@@ -297,13 +343,50 @@ header
     }
 
 
+    #Desc_Build
+    {
+        width: 50%;
+        font-size: 23px;
+    }
+
+    #Image_joker
+    {
+        width: 40%;
+    }
+
+
     /* ----- Fin de la partie District des cartes ----- */
 
 footer
 {
-    /* display: flex; */
-    /* justify-content: center; */
-    height: 50px;
+    display: flex;
+    margin-top: auto;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 50px;
     background-color: grey;
 }
 
+
+#TitreBuild
+    {   
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        height: 150px;
+        font-size: 40px;
+    }
+
+
+@media screen and (max-width: 1100px)
+{
+    .TitreBanniere
+    {
+        display: none;
+    }
+
+    body
+    {
+        width: 100%;
+    }
+}
